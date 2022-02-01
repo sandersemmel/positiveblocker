@@ -1,0 +1,25 @@
+{
+    "name": "Positive blocker",
+    "version": "0.0.0.1",
+    "description": "Add a website to blocking list. Add a custom image and sound every time you try to access blocked website. This list is saved in your browser. No data is collected from you. ",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "/js/background.js"
+      },
+     
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    
+    "action":{
+        "default_popup": "/client/html/addMore.html"
+    },
+
+
+    "icons": {
+        "16": "/client/resources/blitz_icon_16.png",
+        "48": "/client/resources/blitz_icon_48.png",
+       "128": "/client/resources/blitz_icon_128.png" }
+  }

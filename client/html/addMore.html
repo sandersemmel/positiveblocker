@@ -1,0 +1,68 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="/client//css/styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        
+    <div class="inputs">
+        <label>Add More sites here:</label>
+        <br>
+        <input class="form-control" id="addMoreInput" placeholder="paste url to block here">
+        <button class="btn btn-primary" id="savebutton">Save site url</button>
+    </div>
+
+    <br>
+    <div class="inputs">
+        <label id="currentlyblockedlabel">
+            Currently blocked sites:
+        </label>
+
+        <div id="currentlyblocked">
+            <h6 id="noneblocked">No sites currently blocked</h6>
+        </div>
+    </div>
+
+<!-- audio actions-->
+<div class="inputs">
+    <input id="audiosourceinput" placeholder="paste .mp3 url here">
+</div>
+
+<div class="inputs">
+    <button class="btn btn-primary" id="submitaudiosource">Save sound url</button>    
+
+</div>
+
+
+
+<!-- image actions-->
+<div class="inputs">
+    <input id="imagesourceinput" placeholder="paste image url here">
+</div>
+
+<div class="inputs">
+    <button class="btn btn-primary buttons" id="submitimagesource">Save image url</button>
+
+</div>
+
+
+<!-- information about audio and image-->
+<div class="inputs">
+    <img id="audioicon" src="/client/resources/volume-2.svg">
+    <p id="currentaudio">not set</p>
+
+
+    <img id="urlicon" src="/client/resources/link-2.svg">
+    <p id="currentimage">not set</p>
+</div>
+
+
+</body>
+
+    <script src="/js/background.js"></script><!--so we can get access to the 'chrome object'-->
+    <script src="/client/js/addMore.js"></script>
+
+</html>

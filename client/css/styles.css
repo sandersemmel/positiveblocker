@@ -1,0 +1,83 @@
+#blitzgif{
+    display:block;
+    object-fit: cover;
+    max-width:100%;
+    max-height:100%;
+}
+
+#noneblocked{
+    visibility: hidden;
+}
+#currentlyblocked{
+    margin-top: 5%;
+    min-height: 300px;
+    min-width: 220px;
+
+    max-height: 300px;
+    max-width: 220px;
+    margin-bottom: 10px;
+    overflow:scroll;
+    border-style: solid;
+    border-width: 0.01;
+}
+body{
+    padding: 5%;
+    background-color: black;
+}
+#savebutton{
+    margin-top: 5%;
+}
+#currentlyblockedlabel{
+    margin-top: 5%;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+#buttons{
+    margin-top: 5%;
+}
+
+#submitaudiosource{
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+#submitimagesource{
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+#imagediv{
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+}
+#contentbody{
+    display: flex;
+    justify-content: center;
+}
+.blockedItem{
+    font-size:9px;
+    margin-left: 2%;
+}
+#currentaudiolabel{
+    
+}
+#currentaudio{
+    max-width: 220px;
+    min-width: 220px;
+    font-size: 9px;
+}
+#currentimage{
+    max-width: 220px;
+    min-width: 220px;
+    font-size: 9px;
+}
+#audioicon{
+    max-width: 15px;
+    max-height: 15px;
+}
+
+#urlicon{
+    max-width: 15px;
+    max-height: 15px;
+}
