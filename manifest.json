@@ -2,7 +2,6 @@
     "name": "Positive blocker",
     "version": "0.0.0.1",
     "description": "Add a website to blocking list. Add a custom image and sound every time you try to access blocked website. This list is saved in your browser. No data is collected from you. ",
-    "version": "1.0",
     "manifest_version": 3,
     "background": {
         "service_worker": "/js/background.js"
