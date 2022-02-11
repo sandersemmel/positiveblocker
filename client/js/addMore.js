@@ -227,6 +227,24 @@ async function fetchSoundFromDB2(){
 }
 
 
+async function changeSound(sound){
+    if(sound){
+        changeInnerHtml("currentaudio", sound);
+        return;
+    }
+    changeInnerHtml("currentaudio", "not set");
+    return;
+}
+async function changeImage(image){
+    
+    if(image && image != "/client/resources/fallback.png"){
+        changeInnerHtml("currentimage",image)
+        return;
+    }    
+        
+    changeInnerHtml("currentimage", "not set");
+    return;
+}
 
 async function showCurrentStatus(){
     let image = await fetchImageFromDB2();
@@ -235,18 +253,10 @@ async function showCurrentStatus(){
     console.log(`image ${image}`)
     console.log(`sound ${sound}`)
 
+    changeSound(sound);
+    changeImage(image)
 
-    if(image && image != "/client/resources/fallback.png"){
-        changeInnerHtml("currentimage",image)
-    }    
-        
-    changeInnerHtml("currentimage", "not set");
-
-    if(sound){
-        changeInnerHtml("currentaudio", sound);
-
-    }
-    changeInnerHtml("currentaudio", "not set");
+   
 
 
 }
