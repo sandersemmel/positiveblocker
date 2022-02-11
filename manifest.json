@@ -1,6 +1,6 @@
 {
     "name": "Positive blocker",
-    "version": "0.0.0.1",
+    "version": "0.0.0.2",
     "description": "Open source website blocker. Custom picture and sound configurable when opening blocked website.",
     "manifest_version": 3,
     "background": {
